@@ -9,7 +9,6 @@ import { environment } from '../environments/environment';
 })
 export class StudentService {
 
-  private apiServerUrl = environment.api;
 
   constructor( private http : HttpClient) { }
 
