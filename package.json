@@ -2,11 +2,12 @@
   "name": "student-response",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "node server.js",
-    "build": "ng build --prod",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +27,7 @@
     "rxjs": "^6.6.7",
     "rxjs-compat": "^6.6.7",
     "save-dev": "^0.0.1-security",
+    "serve": "^13.0.2",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
   },
