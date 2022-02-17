@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-app.component.spec",
+      "appliesTo": "src/app/app.component.spec.ts",
+      "type": "launch"
+    }
+  ]
+}
