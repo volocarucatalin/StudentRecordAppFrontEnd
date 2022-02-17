@@ -11,7 +11,6 @@
   },
   "private": true,
   "dependencies": {
-    "-": "^0.0.1",
     "@angular/animations": "~13.2.0",
     "@angular/common": "~13.2.0",
     "@angular/compiler": "~13.2.0",
@@ -43,8 +42,8 @@
     "typescript": "~4.5.2"
   },
 
-  "“engines”": {
-    "“node”": "“8.4.1”",
-    "“npm”": "“v17.5.0”"
+  "engines": {
+    "node": "8.4.1",
+    "npm": "v17.5.0"
   }
 }
