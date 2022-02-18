@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng server.js",
-    "build": "ng build --prod",
+    "start": "node server.js",
+    "build": "ng build -- prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -28,6 +28,9 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "“@angular/cli”": "“x.x.x”",
+    "“@angular/compiler-cli”": "“x.x.x”",
+    "“typescript”": "“x.x.x”",
     "@angular/cli": "^13.2.3",
     "@angular/compiler-cli": "~13.2.0",
     "@angular-devkit/build-angular": "~13.2.3",
