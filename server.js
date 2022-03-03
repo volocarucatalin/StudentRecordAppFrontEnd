@@ -8,10 +8,3 @@ app.get('/*', function (req, res) {
 });
 app.listen(process.env.PORT || 8080);
 
-
-const connection = mysql.createConnection({
-  host: 'eu-cdbr-west-02.cleardb.net',
-  user: 'ba55352dbf204e',
-  password: '65807a03',
-  database: 'heroku_fcb65ea2291422a'
-})
