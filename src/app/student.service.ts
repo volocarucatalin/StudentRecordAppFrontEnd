@@ -21,7 +21,7 @@ export class StudentService {
   }
 
   public getStudentById(id: number): Observable<Student> {
-    return this.http.get<Student>('http://localhost:8080/students/find/${id}');
+    return this.http.get<Student>('http://localhost:8080/students/find/{id}');
   }
 
   public updateStudent(student: Student): Observable<Student> {
