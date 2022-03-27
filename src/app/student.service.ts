@@ -21,7 +21,7 @@ export class StudentService {
   }
 
   public getStudentById(id: number): Observable<Student> {
-    return this.http.get<Student>('http://localhost:8080/students/find/{id}');
+    return this.http.get<Student>('http://localhost:8080/students/find/${id}');
   }
 
   public updateStudent(student: Student): Observable<Student> {
@@ -29,7 +29,7 @@ export class StudentService {
   }
 
   public deleteStudent(id: number): Observable<void> {
-    return this.http.delete<void>('http://localhost:8080/students/delete/{id}');
+    return this.http.delete<void>('http://localhost:8080/students/delete/${id}');
   }
 
 }
