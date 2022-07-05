@@ -13,19 +13,19 @@ export class StudentService {
   constructor( private http : HttpClient) { }
 
   public getAllStudents(): Observable<Student[]> {
-    return this.http.get<Student[]>('https://student-report-app.herokuapp.com');
+    return this.http.get<Student[]>('http://localhost:8080/students/all');
   }
 
   public  createStudent(student: Student): Observable<Student> {
-    return this.http.post<Student>('https://student-report-app.herokuapp.com/add', student);
+    return this.http.post<Student>('http://localhost:8080/students/add', student);
   }
 
   public getStudentById(id: number): Observable<Student> {
-    return this.http.get<Student>('https://student-report-app.herokuapp.com/${id}');
+    return this.http.get<Student>('http://localhost:8080/students/find/${id}');
   }
 
   public updateStudent(student: Student): Observable<Student> {
-    return this.http.put<Student>('https://student-report-app.herokuapp.com/update',student);
+    return this.http.put<Student>('http://localhost:8080/students/update',student);
   }
 
   public deleteStudent(id: number): Observable<void> {
