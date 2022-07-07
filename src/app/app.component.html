@@ -29,7 +29,7 @@
           </div>
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item"><i class="fa fa-envelope float-right"></i>{{student?.studentId}}</li>
+          <li class="list-group-item"><i class="fa fa-envelope float-right"></i>Student Code : {{student?.studentId}}</li>
           <li class="list-group-item"><i class="fa fa-phone float-right"></i>ID : {{student?.id}}</li>
         </ul>
         <div class="card-body">
@@ -103,7 +103,7 @@
          
             <div class="modal-footer">
               <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Close</button>
-              <button (click)="onUpdateStudent(editForm.value)" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+              <button (click)="myUpdateStudent(editForm.value)" data-dismiss="modal" class="btn btn-primary">Save changes</button>
             </div>
           </form>
         </div>
@@ -125,7 +125,7 @@
           <p>Are you sure you want to delete student {{deleteStudent?.studentFirstName}}?</p>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-            <button (click)="onDeleteStudent(deleteStudent.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
+            <button (click)="myDeleteStudent(deleteStudent.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
           </div>
         </div>
       </div>

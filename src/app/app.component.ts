@@ -46,7 +46,7 @@ export class AppComponent implements OnInit{
     );
   }
 
-  public onUpdateStudent(student: Student): void {
+  public myUpdateStudent(student: Student): void {
     this.studentService.updateStudent(student
     ).subscribe(
       (response: Student) => {
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit{
     );
   }
 
-  public onDeleteStudent(id: number): void {
+  public myDeleteStudent(id: number): void {
     this.studentService.deleteStudent(id).subscribe(
       (response: void) => {
         console.log(response);
